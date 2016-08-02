@@ -3,7 +3,9 @@
 [![Build Status][webtorrent-bridge-ti]][webtorrent-bridge-tu]
 [![NPM Version][webtorrent-bridge-ni]][webtorrent-bridge-nu]
 
-A webtorrent bridge
+## A bridge for webtorrent
+
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 ## License
 
