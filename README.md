@@ -1,5 +1,7 @@
 # webtorrent-bridge
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/alxhotel/webtorrent-bridge.svg)](https://greenkeeper.io/)
+
 [![Build Status][webtorrent-bridge-ti]][webtorrent-bridge-tu]
 [![NPM Version][webtorrent-bridge-ni]][webtorrent-bridge-nu]
 [![Dependency Status][webtorrent-bridge-di]][webtorrent-bridge-du]
