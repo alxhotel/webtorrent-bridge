@@ -1,0 +1,49 @@
+#!/usr/bin/env node
+
+/* global process */
+
+var fs = require('fs')
+var Bridge = require('../')
+var argv = require('minimist')(process.argv.slice(2))
+var params = require(argv.network || 'webcoin-bitcoin')
+
+var bridge = new Bridge(params.net)
+
+bridge.on('connection', function(peer) {
+	var uri = peer.socket.transport + ':' + peer.remoteAddress
+	console.log('Incoming connection: ' + uri)
+	peer.on('disconnect', function() {
+		console.log('Disconnected from peer: ' + uri)
+	})
+	peer.on('error', function(err) {
+		console.error('Error (' + uri + '):', err)
+	})
+})
+
+bridge.on('bridge', function (webPeer, tcpPeer) {
+	console.log('Bridging connection ' +
+		'from ' + webPeer.socket.transport + ':' + webPeer.remoteAddress +
+		'to tcp://' + tcpPeer.remoteAddress + ':' + tcpPeer.remotePort)
+})
+
+bridge.on('connectError', function (err) {
+	console.log('Connect error: ' + err.stack)
+})
+
+var opts = { port: argv.port }
+if (argv.cert && argv.key) {
+	opts.https = {
+		cert: fs.readFileSync(argv.cert),
+		key: fs.readFileSync(argv.key)
+	}
+	if (argv.ca) {
+		opts.https.ca = fs.readFileSync(argv.ca)
+	}
+}
+
+bridge.accept(opts, function(err) {
+	if (err) return console.error(err)
+	console.log('Accepting ' + argv.cert ? 'secure ' : '' +
+				'websocket connections on port ' + bridge.websocketPort)
+		console.log('Accepting webrtc connections')
+})
