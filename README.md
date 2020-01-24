@@ -1,7 +1,7 @@
 # webtorrent-bridge
 
-[![Build Status][webtorrent-bridge-ti]][webtorrent-bridge-tu]
 [![NPM Version][webtorrent-bridge-ni]][webtorrent-bridge-nu]
+[![Build Status][webtorrent-bridge-ti]][webtorrent-bridge-tu]
 [![Dependency Status][webtorrent-bridge-di]][webtorrent-bridge-du]
 
 ### A bridge for webtorrent
