@@ -15,8 +15,6 @@ $ npm install -g webtorrent-bridge
 $ webtorrent-bridge
 ```
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-
 ## License
 
 MIT. Copyright (c) [Alex](http://github.com/alxhotel)
