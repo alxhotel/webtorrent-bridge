@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A webtorrent bridge",
   "devDependencies": {
-	"standard": "^16.0.0"
+	"standard": "^17.0.0"
   },
   "main": "index.js",
   "scripts": {
