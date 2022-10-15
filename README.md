@@ -1,7 +1,7 @@
 # webtorrent-bridge
 
 [![NPM Version][webtorrent-bridge-ni]][webtorrent-bridge-nu]
-[![Build Status][webtorrent-bridge-ti]][webtorrent-bridge-tu]
+[![Build Status][webtorrent-bridge-bi]][webtorrent-bridge-bu]
 [![Dependency Status][webtorrent-bridge-di]][webtorrent-bridge-du]
 
 ### A bridge for webtorrent
@@ -19,9 +19,9 @@ $ webtorrent-bridge
 
 MIT. Copyright (c) [Alex](http://github.com/alxhotel)
 
-[webtorrent-bridge-ti]: https://img.shields.io/travis/com/alxhotel/webtorrent-bridge/master.svg
-[webtorrent-bridge-tu]: https://travis-ci.com/alxhotel/webtorrent-bridge
 [webtorrent-bridge-ni]: https://img.shields.io/npm/v/webtorrent-bridge.svg
 [webtorrent-bridge-nu]: https://npmjs.org/package/webtorrent-bridge
-[webtorrent-bridge-di]: https://david-dm.org/alxhotel/webtorrent-bridge/status.svg
-[webtorrent-bridge-du]: https://david-dm.org/alxhotel/webtorrent-bridge
+[webtorrent-bridge-bi]: https://img.shields.io/github/workflow/status/alxhotel/webtorrent-bridge/ci/master
+[webtorrent-bridge-bu]: https://github.com/alxhotel/webtorrent-bridge/actions
+[webtorrent-bridge-di]: https://img.shields.io/librariesio/release/npm/webtorrent-bridge
+[webtorrent-bridge-du]: https://libraries.io/npm/webtorrent-bridge
