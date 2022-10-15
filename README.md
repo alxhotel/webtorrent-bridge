@@ -3,6 +3,7 @@
 [![NPM Version][webtorrent-bridge-ni]][webtorrent-bridge-nu]
 [![Build Status][webtorrent-bridge-bi]][webtorrent-bridge-bu]
 [![Dependency Status][webtorrent-bridge-di]][webtorrent-bridge-du]
+[![Standard - Javascript Style Guide][webtorrent-bridge-si]][webtorrent-bridge-su]
 
 ### A bridge for webtorrent
 
@@ -25,3 +26,5 @@ MIT. Copyright (c) [Alex](http://github.com/alxhotel)
 [webtorrent-bridge-bu]: https://github.com/alxhotel/webtorrent-bridge/actions
 [webtorrent-bridge-di]: https://img.shields.io/librariesio/release/npm/webtorrent-bridge
 [webtorrent-bridge-du]: https://libraries.io/npm/webtorrent-bridge
+[webtorrent-bridge-si]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
+[webtorrent-bridge-su]: https://standardjs.com
